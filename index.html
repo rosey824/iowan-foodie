@@ -7,8 +7,56 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./style.css">
     <script src="./scripts.js"></script>
     <link rel="icon" type="image/png" href="./imgs/favicon.png">
 </head>
+<body>
+    <header>
+        <a href="#" class="logo-holder">
+            <div class="logo">
+                <img src="./imgs/favicon.png"
+                alt="Iowan Foodie"
+                width="80px"
+                height="80px"> 
+            </div>
+        <div class="logo-text">IOWAN FOODIE</div>
+        </a>
+    <nav>
+        <ul id="menu">
+            <li>
+                <a href="#">Nav1</a>
+            </li>
+            <li>
+                <a href="#">Nav2</a>
+            </li>
+            <li>
+                <a href="#">Nav3</a>
+            </li>
+            <li>
+                <a href="#">Nav4</a>
+            </li>
+        </ul>
+        <a href="#" class="mobile-toggle"
+        onClick="toggleMobileMenu();">
+        <svg class="w-6 h-6 text-gray-800 
+        dark:text-white" aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg" 
+        width="24" height="24" fill="none" 
+        viewBox="0 0 24 24">
+        <path stroke="currentColor" 
+        stroke-linecap="round" 
+        stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+        </svg>
+    </a>
+    </nav>
+    </header>
+<footer class="footer">
+    <div class="container">
+            <div class="footer-bottom">
+            <p>&copy; 2024 Iowan Foodie. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
