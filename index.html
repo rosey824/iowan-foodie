@@ -10,6 +10,62 @@
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js"></script>
     <link rel="icon" type="image/png" href="./imgs/favicon.png">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVw2PxqR2yLdMF_dvgHdDz_iQaQMa2WMU&callback=initMap" async defer></script>
+    <style>
+        #map {
+            height:600px;
+            width:100%;
+        }
+    </style>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location to center the map
+            var location= {lat:41.5868,lng:93.6250}
+            // The map, centered at location
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 13,
+                center: location
+            });
+            // The marker, positioned at location
+            var marker= new google.maps.Marker({
+                position: location,
+                map: map
+            });
+
+            // Add a circle
+            var circle= new google.maps.Circle({
+                map:map,
+                radius:500, //500 meters
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                strokeColor: 'red',
+                strokeOpacity: 1,
+                strokeWeight: 1
+            });
+            circle.bindTo('center', marker, 'position');
+
+            //Add a polygon
+            var polygon = new google.maps.Polygon({
+                map:map,
+                paths: [
+                    {lat: 51.509, lng: -0.08},
+                    {lat: 51.503, lng: -0.06},
+                    {lat: 51.51, lng: -0.047}
+                ],
+                fillColor: '#00FF00',
+                fillOpacity: 0.5,
+                strokeColor: '#0000FF',
+                strokeOpacity: 1,
+                strokeWeight: 2
+            });
+
+            //Add a click event listener to the map
+            map.addListener('click', function(e) {
+                alert("You clicked the map at " + e.latLng);
+            });
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -62,6 +118,7 @@
                 <a href="#main-content" class="cta-button">Learn More</a>
             </div>
         </div>
+        <div id="map"></div>
 </main> 
 <footer class="footer">
     <div class="container">
