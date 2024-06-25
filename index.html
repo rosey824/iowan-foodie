@@ -49,7 +49,11 @@
             
             //Add an info window for each marker
             var infoWindow = new google.maps.InfoWindow({
-                content: place.name
+                content: `<div>
+                            <h2><strong>${place.name}</strong></h2>
+                            <p>${place.adress}</p>
+                            <a href="${place.googleMapLink}" target="_blank">View on Google Maps</a>
+                        </div>`
             });
 
             marker.addListener('click', function() {
