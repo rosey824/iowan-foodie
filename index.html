@@ -18,25 +18,12 @@
         }
     </style>
     <script>
-        //Iowa GepJSON boundary 
-        const iowaGeoJson = {
-            "type": "Feature",
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [-96.639485, 40.375501],
-                        [-90.140061, 40.375501],
-                        [-90.140061, 43.501196],
-                        [-96.639485, 43.501196],
-                        [-96.639485, 40.375501]
-                    ]
-                ]
-            }
-        };
+        // List of places in Iowa
+
+        
         // Initialize and add the map
         function initMap() {
-            // The location to center the map
+            // Center the map on Iowa
             var iowa= {lat:41.878,lng:-93.097}
             // The map, centered at location
             var map = new google.maps.Map(document.getElementById('map'), {
@@ -44,23 +31,24 @@
                 center: iowa
             });
            
-            //Load GeoJSON
-            map.data.addGeoJson(iowaGeoJson)
-
-            //Style the GeoJSON layer
-            map.data.setStyle({
-                fillColor: '#FF0000',
-                fillOpacity: 0.35,
-                strokeColor: '#FF0000',
-                strokeWeight: 2
-            });
-
-            //Add a marker at the center of Iowa
-            var marker = new google.maps.Marker({
-                position: iowa,
-                map: map
+            // Add markers for each place on map
+            places.forEach(function(place) {
+                var marker= new google.maps.Marker({
+                    position: {lat:place.lat, lng:place.lng},
+                    map: map,
+                    title: place.name
             });
             
+            //Add an info window for each marker
+            var infoWindow = new google.maps.InfoWindow({
+                content: place.name
+            });
+
+            marker.addListener('click', function() {
+                infoWindow.open(map, marker);
+            });
+        });
+
             //Add a click event listener to the Google Map
             map.addListener('click', function(e) {
                 alert("You clicked the map at " + e.latLng);
