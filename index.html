@@ -20,7 +20,12 @@
     <script>
         // List of places in Iowa
         const places = [
-            {name: "The Dandy Lion", lat:41.65966217440525, lng:-91.53339966770307}
+            {name: "The Dandy Lion", 
+            lat:41.65966217440525, 
+            lng:-91.53339966770307,
+            address: "Iowa City, IA",
+            googleMapLink: "https://maps.app.goo.gl/467wMMuo8f6tJuk16"
+        },
     
         ];
         
@@ -40,7 +45,6 @@
                     position: {lat:place.lat, lng:place.lng},
                     map: map,
                     title: place.name
-                    content: Iowa City, IA
             });
             
             //Add an info window for each marker
