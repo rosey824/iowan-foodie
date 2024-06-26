@@ -11,13 +11,8 @@
     <script src="./script.js"></script>
     <link rel="icon" type="image/png" href="./imgs/favicon.png">
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVw2PxqR2yLdMF_dvgHdDz_iQaQMa2WMU&callback=initMap" async defer></script>
-    <style>
-        #map {
-            height:600px;
-            width:100%;
-        }
-    </style>
     <script>
+
         // List of places in Iowa
         const places = [
             {
@@ -29,14 +24,13 @@
         }
     
         ];
-
-        let map;
-        const iowa = { lat: 41.878, lng: -93.097 };
         
         // Initialize and add the map
         function initMap() {
+
             // Center the map on Iowa
             var iowa= {lat:41.878,lng:-93.097}
+
             // The map, centered at location
             var map = new google.maps.Map(document.getElementById('map'), {
                 zoom: 7,
@@ -65,11 +59,6 @@
                 map.setZoom(13);  // Set zoom level
                 map.setCenter(marker.getPosition());
             });
-        });
-        // Add event listener to reset button
-        document.getElementById('resetButton').addEventListener('click', function() {
-                map.setZoom(7);
-                map.setCenter(iowa);
         });
     }
     </script>
