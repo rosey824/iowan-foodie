@@ -16,27 +16,17 @@
             height:600px;
             width:100%;
         }
-        .reset-button {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            z-index: 5;
-            background-color: white;
-            padding: 10px;
-            border: none;
-            cursor: pointer;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-        }
     </style>
     <script>
         // List of places in Iowa
         const places = [
-            {name: "The Dandy Lion", 
+            {
+            name: "The Dandy Lion", 
             lat:41.65966217440525, 
             lng:-91.53339966770307,
             address: "Iowa City, IA",
             googleMapLink: "https://maps.app.goo.gl/467wMMuo8f6tJuk16"
-        },
+        }
     
         ];
 
@@ -136,6 +126,8 @@
             </div>
         </div>
         <div id="map"></div>
+        `<button id="resetButton" 
+        class="reset-button">Reset Map</button>
 </main> 
 <footer class="footer">
     <div class="container">
