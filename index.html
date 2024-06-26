@@ -39,6 +39,9 @@
         },
     
         ];
+
+        let map;
+        const iowa = { lat: 41.878, lng: -93.097 };
         
         // Initialize and add the map
         function initMap() {
@@ -69,11 +72,16 @@
 
             marker.addListener('click', function() {
                 infoWindow.open(map, marker);
-                map.setZoom(13);  // Set zoom level per requirement
+                map.setZoom(13);  // Set zoom level
                 map.setCenter(marker.getPosition());
             });
         });
-        }
+        // Add event listener to reset button
+        document.getElementById('resetButton').addEventListener('click', function() {
+                map.setZoom(7);
+                map.setCenter(iowa);
+        });
+    }
     </script>
 </head>
 <body>
