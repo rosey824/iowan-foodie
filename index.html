@@ -58,6 +58,8 @@
 
             marker.addListener('click', function() {
                 infoWindow.open(map, marker);
+                map.setZoom(13);  // Set zoom level per requirement
+                map.setCenter(marker.getPosition());
             });
         });
 
