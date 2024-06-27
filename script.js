@@ -28,7 +28,7 @@ controlButton.textContent = "Center Map";
 controlButton.title = "Click to recenter the map";
 controlButton.type = "button";
 
-//Setup the click evenet listeners: simply set the map to Chicago.
+//Setup the click evenet listeners: simply set the map to Iowa.
 controlButton.addEventListener("click", () => {
     map.setCenter(iowa);
 });
