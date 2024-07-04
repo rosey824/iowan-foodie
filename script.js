@@ -70,6 +70,27 @@ const places = [
         address:"Burlington, IA",
         googleMapLink: "https://maps.app.goo.gl/Twy6Qwnw31b5ZnKy7"
     },
+    { 
+        name:"Uppers",
+        lat:40.8114941845677, 
+        lng:-91.11114633560219,
+        address:"Burlington, IA",
+        googleMapLink: "https://maps.app.goo.gl/z4EpE4AwkJjy7Mjr8"
+    },
+    { 
+        name:"Good Restaurant + Lounge",
+        lat:40.811680084200944, 
+        lng:-91.10230866076174,
+        address:"Burlington, IA",
+        googleMapLink: "https://maps.app.goo.gl/QJ1hb8R1nDxVZca4A"
+    },
+    { 
+        name:"eat.",
+        lat:36.16706849718069,
+        lng:-115.13899359327748,
+        address:"Las Vegas, NV",
+        googleMapLink: "https://maps.app.goo.gl/XTcc5928DcLAMRUTA"
+    },
 ];
 
 // Initialize and add the map
