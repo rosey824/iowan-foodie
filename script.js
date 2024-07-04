@@ -127,3 +127,40 @@ function initMap() {
 }
 
 window.initMap = initMap;
+
+//Instagram Feed
+document.addEventListener("DOMContentLoaded", function () {
+    const profileUrl = 'https://www.instagram.com/iowanfoodie/'; //Instagram username
+
+    fetch(profileUrl)
+        .then(response => response.text())
+        .then(data => {
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(data, 'text/html');
+            const scripts = doc.querySelectorAll('script[type="text/javascript"]');
+            let jsonData = null;
+
+            scripts.forEach(script => {
+                if (script.innerText.includes('window._sharedData')) {
+                    const sharedData = script.innerText.match(/window\._sharedData = (.*);/);
+                    jsonData = JSON.parse(sharedData[1]).entry_data.ProfilePage[0].graphql.user.edge_owner_to_timeline_media.edges;
+                }
+            });
+
+            if (jsonData) {
+                const feedContainer = document.getElementById('instagram-feed');
+                jsonData.forEach(post => {
+                    const postElement = document.createElement('div');
+                    postElement.classList.add('instagram-post');
+                    postElement.innerHTML = `
+                        <a href="https://www.instagram.com/p/${post.node.shortcode}/" target="_blank">
+                            <img src="${post.node.display_url}" alt="${post.node.edge_media_to_caption.edges[0]?.node.text || ''}">
+                        </a>
+                    `;
+                    feedContainer.appendChild(postElement);
+                });
+            }
+        })
+        .catch(error => console.error('Error fetching Instagram feed:', error));
+});
+
