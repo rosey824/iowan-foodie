@@ -155,7 +155,13 @@ header {
 
 #map {
     height:600px;
-    width:100%;
+    width: 90%; /* Adjust the width to include padding */
+    margin: 40px auto; /* Center the map and add vertical margin */
+    padding: 20px; /* Add padding around the map */
+    border: 2px solid #ccc; /* Add a frame */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    border-radius: 10px; /* Optional: add rounded corners */
+    background-color: #fff; /* Optional: add background color to the container */
 }
 
 .footer {
