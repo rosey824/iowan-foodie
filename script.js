@@ -91,6 +91,7 @@ const places = [
         address:"Las Vegas, NV",
         googleMapLink: "https://maps.app.goo.gl/XTcc5928DcLAMRUTA"
     },
+
 ];
 
 // Initialize and add the map
@@ -102,14 +103,14 @@ function initMap() {
 
     // Add markers for each place on map
     places.forEach(function(place) {
-        const marker = new google.maps.marker.AdvancedMarkerElement({
+        var marker = new google.maps.Marker({
             position: { lat: place.lat, lng: place.lng },
             map: map,
             title: place.name
         });
 
         // Add an info window for each marker
-        const infoWindow = new google.maps.InfoWindow({
+        var infoWindow = new google.maps.InfoWindow({
             content: `<div>
                         <h2><strong>${place.name}</strong></h2>
                         <p>${place.address}</p>
