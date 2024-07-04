@@ -109,7 +109,7 @@ function initMap() {
         });
 
         // Add an info window for each marker
-        var infoWindow = new google.maps.InfoWindow({
+        const infoWindow = new google.maps.InfoWindow({
             content: `<div>
                         <h2><strong>${place.name}</strong></h2>
                         <p>${place.address}</p>
