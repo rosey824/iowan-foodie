@@ -102,7 +102,7 @@ function initMap() {
 
     // Add markers for each place on map
     places.forEach(function(place) {
-        var marker = new google.maps.marker.AdvancedMarkerElement({
+        const marker = new google.maps.marker.AdvancedMarkerElement({
             position: { lat: place.lat, lng: place.lng },
             map: map,
             title: place.name
