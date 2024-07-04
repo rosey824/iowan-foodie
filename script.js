@@ -22,19 +22,54 @@ const places = [
         googleMapLink: "https://maps.app.goo.gl/pa4kHPYebPp49WjBA"
     },
     {
-        name: "New Place Name",
-        lat: 40.712776,
-        lng: -74.005974,
-        address: "New York, NY",
-        googleMapLink: "https://maps.app.goo.gl/exampleNewPlace"
+        name: "Armored Gardens",
+        lat: 41.52324136074508, 
+        lng:-90.57091192890194,
+        address: "Davenport, IA",
+        googleMapLink: "https://maps.app.goo.gl/qYidoEwCribaMMEd9"
     },
     {
-        name: "New Place Name",
-        lat: 40.712776,
-        lng: -74.005974,
-        address: "New York, NY",
-        googleMapLink: "https://maps.app.goo.gl/exampleNewPlace"
-    }
+        name: "La Casa Maya",
+        lat: 42.166369688999325, 
+        lng: -93.63601953847346,
+        address: "Ames, IA",
+        googleMapLink: "https://maps.app.goo.gl/7gKJxu8gVYPvnmJq7"
+    },
+    { 
+        name: "Boulder Tap House",
+        lat:42.022522601286745, 
+        lng:-93.61000436629713,
+        address: "Ames, IA",
+        googleMapLink: "https://maps.app.goo.gl/5Xb83yLdRGheQ7QA8"
+    },
+    { 
+        name:"Vinyl Cafe",
+        lat:42.024939614271645, 
+        lng:-93.61385139328148,
+        address:"Ames, IA",
+        googleMapLink: "https://maps.app.goo.gl/QetZLFJL4f3cx4hN6"
+    },
+    { 
+        name:"Macubana",
+        lat:42.02227817232284, 
+        lng:-93.65000246630939,
+        address:"Ames, IA",
+        googleMapLink: "https://maps.app.goo.gl/WfN2FPjc49FTsynJ6"
+    },
+    { 
+        name:"The Royal Mile",
+        lat:41.58578201640443, 
+        lng:-93.62189185586462,
+        address:"Des Moines, IA",
+        googleMapLink: "https://maps.app.goo.gl/WkW2Tq99zdrvKGGi6"
+    },
+    { 
+        name:"The Som",
+        lat:40.81148766573086, 
+        lng:-91.11061746260702, 
+        address:"Burlington, IA",
+        googleMapLink: "https://maps.app.goo.gl/Twy6Qwnw31b5ZnKy7"
+    },
 ];
 
 // Initialize and add the map
