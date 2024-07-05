@@ -91,6 +91,76 @@ const places = [
         address:"Las Vegas, NV",
         googleMapLink: "https://maps.app.goo.gl/XTcc5928DcLAMRUTA"
     },
+    {
+        name: "Jethro's BBQ",
+        lat:42.0122755122152, 
+        lng:-93.61304058424858,
+        address: "Ames, IA",
+        googleMapLink:"https://maps.app.goo.gl/hBNTB39oiyZ4sG7fA"
+    },
+    {
+        name:"Carlos Quesadillas Food Truck",
+        lat:42.029444368971994, 
+        lng:-93.64449794156465,
+        address:"Ames, IA",
+        googleMapLink:"https://maps.app.goo.gl/xCvEbfDE7zmcVUKA7"
+    },
+    {
+        name:"Humble Donuts",
+        lat:42.02376716687428, 
+        lng:-93.61937561545824,
+        address:"Ames, IA",
+        googleMapLink:"https://maps.app.goo.gl/f9B7YXDCfX6Yed4L8"
+    },
+    {
+        name:"The Grove Cafe",
+        lat:42.02554015330304, 
+        lng:-93.61131512286342,
+        address:"Ames, IA",
+        googleMapLink:"https://maps.app.goo.gl/zRW9rjxbdUsEWNLb8"
+    },
+    {
+        name:"Magoo's Pizza",
+        lat:42.84833454033085, 
+        lng:-90.74281273387788,
+        address:"Dubuque, IA",
+        googleMapLink:"https://maps.app.goo.gl/eop9wjto7zXyoMXY7"
+    },
+    {
+        name:"Cle's Chicago Treats",
+        lat:42.02982824550808, 
+        lng:-93.6441168001101,
+        address:"Ames, IA",
+        googleMapLink:"https://maps.app.goo.gl/mSoBjPRiRxQe4m6T7"
+    },
+    {
+        name:"Harvestville Farm",
+        lat:40.65773105641815, 
+        lng:-91.53478977088223,
+        address:"Donnellson, IA",
+        googleMapLink:"https://maps.app.goo.gl/HX4WQ6FM9F1Vs1Us7"
+    },
+    {
+        name:"Fat Jimmy's Smokehouse and Spirits",
+        lat:40.51331561689469, 
+        lng:-91.38304423932715,
+        address:"Montrose, IA",
+        googleMapLink:"https://maps.app.goo.gl/tfXrqes8LqkhmP7t9"
+    },
+    {
+        name:"Le's Restaurant",
+        lat:42.023716767901796, 
+        lng:-93.66370611535174,
+        address:"Ames, IA",
+        googleMapLink:"https://maps.app.goo.gl/aXmiRL9CHMben5gw7"
+    },
+    {
+        name:"WineStyles",
+        lat:41.56136294504824, 
+        lng:-93.78261279252366,
+        address:"West Des Moines, IA",
+        googleMapLink:"https://maps.app.goo.gl/jBBT82FaGMhH2ew46"
+    },
 
 ];
 

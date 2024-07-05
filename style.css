@@ -169,6 +169,7 @@ header {
     height: 600px;
     width: 40%;
     padding: 20px;
+    overflow-y: auto; /*veritcal scroll*/
     margin: auto;
     margin-left: auto;
     margin-right: auto;
@@ -182,7 +183,32 @@ header {
     color: black;
     font-size: 20px;
     text-align: left;
+    list-style-type: none; /* Remove default list style */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
 }
+
+#legend-list li {
+    margin: 5px 0; /* Add space between items (places on map) */
+}
+
+#legend-list a {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Text color */
+}
+
+#legend-list a:hover {
+    border: 2px solid black; /* Border on hover */
+    background-color: black;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+    text-decoration: none; /*no underline on hover */
+    color: #FFAE42; /* Change text color on hover */
+    padding: 3px;
+    border-radius: 10px; /*add rounded corners on hover*/
+
+}
+
+
 
 #map {
     height:600px;
