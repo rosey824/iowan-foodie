@@ -104,7 +104,7 @@ function initMap() {
     //Custome marker icon URL
     const customIcon = {
         url: './imgs/custom-icon.png', // Relative path to your custom icon
-        scaledSize: new google.maps.Size(40, 40), // Size of the icon
+        scaledSize: new google.maps.Size(80, 80), // Size of the icon
         origin: new google.maps.Point(0, 0), // Origin of the icon (0, 0)
         anchor: new google.maps.Point(20, 40) // Anchor of the icon (base of the icon)
     };
