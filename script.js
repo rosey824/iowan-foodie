@@ -101,16 +101,26 @@ function initMap() {
         center: iowa,
     });
 
+    //Custome marker icon URL
+    const customIcon = {
+        url: './imgs/custom-icon.png', // Relative path to your custom icon
+        scaledSize: new google.maps.Size(40, 40), // Size of the icon
+        origin: new google.maps.Point(0, 0), // Origin of the icon (0, 0)
+        anchor: new google.maps.Point(20, 40) // Anchor of the icon (base of the icon)
+    };
+
     // Add markers for each place on map
+    const markers= [];
     places.forEach(function(place) {
         var marker = new google.maps.Marker({
             position: { lat: place.lat, lng: place.lng },
             map: map,
-            title: place.name
+            title: place.name,
+            icon: customIcon
         });
 
         // Add an info window for each marker
-        var infoWindow = new google.maps.InfoWindow({
+        const infoWindow = new google.maps.InfoWindow({
             content: `<div>
                         <h2><strong>${place.name}</strong></h2>
                         <p>${place.address}</p>
