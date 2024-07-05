@@ -109,23 +109,24 @@ function initMap() {
         anchor: new google.maps.Point(30, 60) // Anchor of the icon (base of the icon)
     };
 
-    // Add markers for each place on map
+    // Add markers for each place on map and create legend/list
     const markers= [];
-    places.forEach(function(place) {
-        var marker = new google.maps.Marker({
+    const legendDiv = document.getElementById('legend');
+    places.forEach((place, index) => {
+        const marker = new google.maps.Marker({
             position: { lat: place.lat, lng: place.lng },
             map: map,
             title: place.name,
             icon: customIcon
         });
 
-        // Add an info window for each marker
-        const infoWindow = new google.maps.InfoWindow({
-            content: `<div>
-                        <h2><strong>${place.name}</strong></h2>
-                        <p>${place.address}</p>
-                        <a href="${place.googleMapLink}" target="_blank">View on Google Maps</a>
-                      </div>`
+    // Add an info window for each marker
+    const infoWindow = new google.maps.InfoWindow({
+        content: `<div>
+                    <h2><strong>${place.name}</strong></h2>
+                    <p>${place.address}</p>
+                    <a href="${place.googleMapLink}" target="_blank">View on Google Maps</a>
+            </div>`
         });
 
         marker.addListener('click', function() {
@@ -133,6 +134,18 @@ function initMap() {
             map.setZoom(13);  // Set zoom level
             map.setCenter(marker.getPosition());
         });
+
+        //Create entry for legend
+        const listItem = document.createElement('div');
+        listItem.innerHTML = `<a href="#">${place.name}</a>`;
+        listItem.addEventListener('click', () => {
+            map.setCenter(marker.getPosition());
+            map.setZoom(13);
+            infowindow.open(map, marker);
+        });
+        placesUl.appendChild(listItem);
+
+        markers.push(marker);
     });
 }
 
