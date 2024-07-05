@@ -172,6 +172,10 @@ header {
     margin: auto;
     margin-left: auto;
     margin-right: auto;
+    border: 2px solid #ccc; /* Add a frame */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    border-radius: 10px; /* Optional: add rounded corners */
+    background-color: #fff; /* Optional: add background color to the container */
 }
 
 #map {
