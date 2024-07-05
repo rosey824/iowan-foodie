@@ -49,6 +49,7 @@ function initMap() {
     // Add markers for each place on map and create legend/list
     const markers= [
         { name: "WineStyles", lat: 41.56136294504824, lng: -93.78261279252366, address: "West Des Moines, IA", googleMapLink: "https://maps.app.goo.gl/jBBT82FaGMhH2ew46" },
+        { name: "St Burch Tavern", lat: 41.661251294431594, lng: -91.53327938123618, address: "Iowa City, IA", googleMapLink: "https://maps.app.goo.gl/pa4kHPYebPp49WjBA" },
 
     ];
     const legendDiv = document.getElementById('legend');
