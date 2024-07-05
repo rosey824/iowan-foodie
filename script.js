@@ -101,7 +101,7 @@ function initMap() {
         center: iowa,
     });
 
-    //Custome marker icon URL
+    //Custom marker icon URL
     const customIcon = {
         url: './imgs/custom-icon.png', // Relative path to your custom icon
         scaledSize: new google.maps.Size(60, 60), // Size of the icon
@@ -138,3 +138,9 @@ function initMap() {
 
 window.initMap = initMap;
 
+// Load the Google Maps script dynamically
+const script = document.createElement('script');
+script.src = `https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap`;
+script.async = true;
+script.defer = true;
+document.head.appendChild(script);

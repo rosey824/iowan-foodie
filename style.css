@@ -153,6 +153,27 @@ header {
     background-color: rgba(0, 0, 0, 0.9);
 }
 
+.row {
+    display:flex;
+    padding: 40px;
+}
+
+.column {
+    flex:1;
+    padding:10px;
+    box-sizing: border-box;
+}
+
+#legend {
+    background-color: black;
+    height: 600px;
+    width: 40%;
+    padding: 20px;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #map {
     height:600px;
     width: 90%; /* Adjust the width to include padding */
