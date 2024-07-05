@@ -48,7 +48,7 @@ function initMap() {
 
     // Add markers for each place on map and create legend/list
     const markers= [];
-    const legendDiv = document.getElementById('legend');
+    const legendDiv = document.getElementById('legend-list');
     places.forEach((place, index) => {
         const marker = new google.maps.Marker({
             position: { lat: place.lat, lng: place.lng },
