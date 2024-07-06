@@ -85,8 +85,3 @@ function initMap() {
         markers.push(marker);
     });
 }
-
-// Add the recenter button functionality
-document.getElementById("recenterButton").addEventListener("click", function() {
-    map.set
-});
