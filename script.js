@@ -72,8 +72,6 @@ function initMap() {
             map.setCenter(marker.getPosition());
         });
 
-        
-
         //Create entry for legend
         const listItem = document.createElement('div');
         listItem.innerHTML = `<a href="#">${place.name}</a>`;
@@ -88,4 +86,7 @@ function initMap() {
     });
 }
 
-window.initMap = initMap;
+// Add the recenter button functionality
+document.getElementById("recenterButton").addEventListener("click", function() {
+    map.set
+});
