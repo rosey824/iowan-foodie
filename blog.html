@@ -3,15 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iowan Foodie</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Blog - Iowan Foodie</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
     <link rel="icon" type="image/png" href="./imgs/favicon.png">
-    <script aysnc defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVw2PxqR2yLdMF_dvgHdDz_iQaQMa2WMU&callback=initMap">    
-    </script>
 </head>
 <body>
     <header class="bg-white shadow-sm">
@@ -27,49 +21,59 @@
                     <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
                     <li class="nav-item"><a href="restaurants.html" class="nav-link">Restaurants</a></li>
                     <li class="nav-item"><a href="partnership.html" class="nav-link">Partnership</a></li>
-                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item active"><a href="blog.html" class="nav-link">Blog</a></li>
                 </ul>
             </div>
         </nav>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
     </header>
 
-    <main class="container mt-4">
-        <div class="post mb-4">
-            <h2>A Sweet Experience at Cinnaholic Des Moines</h2>
-            <p class="text-muted">Posted on April 7th, 2022 by Emma Rose</p>
-            <p>Hey, fellow foodies! I had the opportunity to attend the soft opening of Cinnaholic Des Moines and I am beyond excited to share my experience with you all. If you love cinnamon rolls as much as I do, you'll want to mark your calendars for their grand opening tomorrow, April 8th, at 10 AM.
-
-                Located in the vibrant East Village of Des Moines, Cinnaholic offers a unique and mouth-watering selection of cinnamon rolls that are 100% vegan. Yep, you read that right. Everything they serve is dairy-free, lactose-free, and egg-free, making it a fantastic treat for everyone.
-                
-                During the private event, I got to taste these heavenly rolls, and all I can say is... WOW! The flavors are incredible, and each bite is a dream come true for any sweets lover. The rolls are perfectly soft, gooey, and packed with flavor.
-                
-                To make the grand opening even sweeter, there's a special deal from 10 AM to 2 PM on April 8th: all cinnamon rolls will be $1, with a limit of one roll per person. Trust me, you do not want to miss out on this delicious deal!
-                
-                So, head over to Cinnaholic Des Moines tomorrow and treat yourself to the best cinnamon rolls in the East Village. You won't regret it!.</p>
-            <a href="#" class="btn btn-primary">Read more</a>
-        </div>
-
-        <div class="post mb-4">
-            <h2>Blog Post Title 2</h2>
-            <p class="text-muted">Posted on July 29, 2024 by Author</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet accumsan tortor...</p>
-            <a href="#" class="btn btn-primary">Read more</a>
-        </div>
-
-        <!-- Add more blog posts as needed -->
+    <main>
+        <section class="blog-section">
+            <div class="container">
+                <h1 class="section-title">Our Blog</h1>
+                <div class="blog-posts">
+                    <!-- Blog Post 1 -->
+                    <div class="blog-post">
+                        <img src="imgs/blog-post-1.jpg" alt="Blog Post 1" class="blog-post-image">
+                        <div class="blog-post-content">
+                            <h2 class="blog-post-title">Exploring the Best of Des Moines</h2>
+                            <p class="blog-post-date">July 30, 2024</p>
+                            <p class="blog-post-summary">Discover the hidden gems and popular spots that make Des Moines a foodie's paradise. From farm-to-table restaurants to artisanal coffee shops, we've got you covered.</p>
+                            <a href="blog-post-1.html" class="blog-post-link">Read More</a>
+                        </div>
+                    </div>
+                    <!-- Blog Post 2 -->
+                    <div class="blog-post">
+                        <img src="imgs/blog-post-2.jpg" alt="Blog Post 2" class="blog-post-image">
+                        <div class="blog-post-content">
+                            <h2 class="blog-post-title">Top 10 Must-Try Foods in Iowa City</h2>
+                            <p class="blog-post-date">July 25, 2024</p>
+                            <p class="blog-post-summary">Join us on a culinary adventure through Iowa City, where we'll highlight the top 10 must-try foods that showcase the city's vibrant food scene.</p>
+                            <a href="blog-post-2.html" class="blog-post-link">Read More</a>
+                        </div>
+                    </div>
+                    <!-- Blog Post 3 -->
+                    <div class="blog-post">
+                        <img src="imgs/blog-post-3.jpg" alt="Blog Post 3" class="blog-post-image">
+                        <div class="blog-post-content">
+                            <h2 class="blog-post-title">A Day in the Life of a Midwest Foodie</h2>
+                            <p class="blog-post-date">July 20, 2024</p>
+                            <p class="blog-post-summary">Ever wondered what it's like to be a foodie in the Midwest? Follow along as we spend a day exploring local markets, food festivals, and unique eateries.</p>
+                            <a href="blog-post-3.html" class="blog-post-link">Read More</a>
+                        </div>
+                    </div>
+                    <!-- Add more blog posts as needed -->
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2024 My Blog. All rights reserved.</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Iowan Foodie. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
