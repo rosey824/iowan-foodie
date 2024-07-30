@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iowan Foodie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <link rel="icon" type="image/png" href="./imgs/favicon.png">
+    <script aysnc defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVw2PxqR2yLdMF_dvgHdDz_iQaQMa2WMU&callback=initMap">    
+    </script>
+</head>
+<body>
+    <header class="bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light container">
+            <a class="navbar-brand" href="index.html">
+                <img src="imgs/favicon.png" alt="Iowan Foodie Logo" class="img-fluid" style="max-width: 100px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="restaurants.html" class="nav-link">Restaurants</a></li>
+                    <li class="nav-item"><a href="partnership.html" class="nav-link">Partnership</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                </ul>
+            </div>
+        </nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+    </header>
+
+    <main class="container mt-4">
+        <div class="post mb-4">
+            <h2>Blog Post Title 1</h2>
+            <p class="text-muted">Posted on July 30, 2024 by Author</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet accumsan tortor...</p>
+            <a href="#" class="btn btn-primary">Read more</a>
+        </div>
+
+        <div class="post mb-4">
+            <h2>Blog Post Title 2</h2>
+            <p class="text-muted">Posted on July 29, 2024 by Author</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet accumsan tortor...</p>
+            <a href="#" class="btn btn-primary">Read more</a>
+        </div>
+
+        <!-- Add more blog posts as needed -->
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 My Blog. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
