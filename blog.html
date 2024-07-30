@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - Iowan Foodie</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" type="image/png" href="./imgs/favicon.png">
 </head>
@@ -28,38 +30,44 @@
     </header>
 
     <main>
-        <section class="blog-section">
+        <section class="blog-section py-5">
             <div class="container">
-                <h1 class="section-title">Blog - Iowan Foodie</h1>
-                <div class="blog-posts">
+                <h1 class="section-title mb-5">Blog - Iowan Foodie</h1>
+                <div class="row">
                     <!-- Blog Post 1 -->
-                    <div class="blog-post">
-                        <img src="imgs/blog-post-1.jpg" alt="Blog Post 1" class="blog-post-image">
-                        <div class="blog-post-content">
-                            <h2 class="blog-post-title">A Sweet Experience at Cinnaholic Des Moines</h2>
-                            <p class="blog-post-date">April 7th, 2024</p>
-                            <p class="blog-post-summary">Discover the newest spot in the East Village that make Des Moines a foodie's paradise. </p>
-                            <a href="blog-post-1.html" class="blog-post-link">Read More</a>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <img src="imgs/blog-post-1.jpg" alt="A Sweet Experience at Cinnaholic Des Moines" class="card-img-top">
+                            <div class="card-body">
+                                <h2 class="card-title h5">A Sweet Experience at Cinnaholic Des Moines</h2>
+                                <p class="card-text text-muted">April 7th, 2024</p>
+                                <p class="card-text">Discover the newest spot in the East Village that make Des Moines a foodie's paradise.</p>
+                                <a href="blog-post-1.html" class="btn btn-primary">Read More</a>
+                            </div>
                         </div>
                     </div>
                     <!-- Blog Post 2 -->
-                    <div class="blog-post">
-                        <img src="imgs/blog-post-2.jpg" alt="Blog Post 2" class="blog-post-image">
-                        <div class="blog-post-content">
-                            <h2 class="blog-post-title">Top 10 Must-Try Foods in Iowa City</h2>
-                            <p class="blog-post-date">July 25, 2024</p>
-                            <p class="blog-post-summary">Join us on a culinary adventure through Iowa City, where we'll highlight the top 10 must-try foods that showcase the city's vibrant food scene.</p>
-                            <a href="blog-post-2.html" class="blog-post-link">Read More</a>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <img src="imgs/blog-post-2.jpg" alt="Top 10 Must-Try Foods in Iowa City" class="card-img-top">
+                            <div class="card-body">
+                                <h2 class="card-title h5">Top 10 Must-Try Foods in Iowa City</h2>
+                                <p class="card-text text-muted">July 25, 2024</p>
+                                <p class="card-text">Join us on a culinary adventure through Iowa City, where we'll highlight the top 10 must-try foods that showcase the city's vibrant food scene.</p>
+                                <a href="blog-post-2.html" class="btn btn-primary">Read More</a>
+                            </div>
                         </div>
                     </div>
                     <!-- Blog Post 3 -->
-                    <div class="blog-post">
-                        <img src="imgs/blog-post-3.jpg" alt="Blog Post 3" class="blog-post-image">
-                        <div class="blog-post-content">
-                            <h2 class="blog-post-title">A Day in the Life of a Midwest Foodie</h2>
-                            <p class="blog-post-date">July 20, 2024</p>
-                            <p class="blog-post-summary">Ever wondered what it's like to be a foodie in the Midwest? Follow along as we spend a day exploring local markets, food festivals, and unique eateries.</p>
-                            <a href="blog-post-3.html" class="blog-post-link">Read More</a>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <img src="imgs/blog-post-3.jpg" alt="A Day in the Life of a Midwest Foodie" class="card-img-top">
+                            <div class="card-body">
+                                <h2 class="card-title h5">A Day in the Life of a Midwest Foodie</h2>
+                                <p class="card-text text-muted">July 20, 2024</p>
+                                <p class="card-text">Ever wondered what it's like to be a foodie in the Midwest? Follow along as we spend a day exploring local markets, food festivals, and unique eateries.</p>
+                                <a href="blog-post-3.html" class="btn btn-primary">Read More</a>
+                            </div>
                         </div>
                     </div>
                     <!-- Add more blog posts as needed -->
@@ -67,6 +75,7 @@
             </div>
         </section>
     </main>
+    
 
     <footer class="footer">
         <div class="container">
@@ -75,5 +84,10 @@
             </div>
         </div>
     </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
