@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants - Iowan Foodie</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVw2PxqR2yLdMF_dvgHdDz_iQaQMa2WMU&callback=initMap"></script>
+    <script src="./script.js"></script>
+</head>
+<body>
+    <header class="bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="imgs/favicon.png" alt="Iowan Foodie Logo" class="img-fluid" style="max-width: 100px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="restaurants.html" class="nav-link">Restaurants</a></li>
+                        <li class="nav-item"><a href="partnership.html" class="nav-link">Partnership</a></li>
+                        <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="restaurants-section py-5">
+            <div class="container-fluid">
+                <h1 class="section-title mb-5">Explore Restaurants</h1>
+                <div class="row">
+                    <!-- Restaurant 1 -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <img src="imgs/restaurant-1.jpg" alt="Restaurant 1" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Restaurant Name 1</h5>
+                                <p class="card-text">A brief description of Restaurant Name 1, highlighting its cuisine, specialties, and location.</p>
+                                <a href="restaurant-1.html" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Restaurant 2 -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <img src="imgs/restaurant-2.jpg" alt="Restaurant 2" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Restaurant Name 2</h5>
+                                <p class="card-text">A brief description of Restaurant Name 2, highlighting its cuisine, specialties, and location.</p>
+                                <a href="restaurant-2.html" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Restaurant 3 -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <img src="imgs/restaurant-3.jpg" alt="Restaurant 3" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Restaurant Name 3</h5>
+                                <p class="card-text">A brief description of Restaurant Name 3, highlighting its cuisine, specialties, and location.</p>
+                                <a href="restaurant-3.html" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more restaurants as needed -->
+                </div>
+            </div>
+        </section>
+
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <!-- Map Legend -->
+                <div class="col-md-4">
+                    <div id="legend" class="bg-light p-3 rounded">
+                        <h4>Restaurants</h4>
+                        <ul id="legend-list" class="list-unstyled">
+                            <li><a href="#" id="place1">The Dandy Lion</a></li>
+                            <li><a href="#" id="place2">St Burch Tavern</a></li>
+                            <li><a href="#" id="place3">Armored Gardens</a></li>
+                            <li><a href="#" id="place3">La Casa Maya</a></li>
+                            <li><a href="#" id="place3">Boulder Tap House</a></li>
+                            <li><a href="#" id="place3">Vinyl Cafe</a></li>
+                            <li><a href="#" id="place3">Macubana</a></li>
+                            <li><a href="#" id="place3">The Royal Mile</a></li>
+                            <li><a href="#" id="place3">The Som</a></li>
+                            <li><a href="#" id="place3">Uppers</a></li>
+                            <li><a href="#" id="place3">Good Restaurant + Lounge</a></li>
+                            <li><a href="#" id="place3">eat.</a></li>
+                            <li><a href="#" id="place3">Jethro's BBQ</a></li>
+                            <li><a href="#" id="place3">Carlos Quesadillas Food Truck</a></li>
+                            <li><a href="#" id="place3">Humble Donuts</a></li>
+                            <li><a href="#" id="place3">The Grove Cafe</a></li>
+                            <li><a href="#" id="place3">Magoo's Pizza</a></li>
+                            <li><a href="#" id="place3">Cle's Chicago Treats</a></li>
+                            <li><a href="#" id="place3">Harvestville Farm</a></li>
+                            <li><a href="#" id="place3">Fat Jimmy's Smokehouse and Spirits</a></li>
+                            <li><a href="#" id="place3">Le's Restaurant</a></li>
+                            <li><a href="#" id="place3">WineStyles</a></li>
+                            <!-- Add more places here as needed -->
+                        </ul>
+                    </div>
+                </div>
+                <!-- Map -->
+                <div class="col-md-8">
+                    <div id="map" class="w-100" style="height: 500px;"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container-fluid text-center">
+            <p>&copy; 2024 Iowan Foodie. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
