@@ -1,12 +1,19 @@
 .video-hero {
     position: relative;
+    height: 100vh;
+    min-height: calc(100vh - 80px); /* Subtracts the height of the navbar/footer if needed */
     overflow: hidden;
 }
+
 .video-hero video {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
 }
+
 .hero-content {
     position: absolute;
     top: 50%;

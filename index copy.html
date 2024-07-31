@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Partnerships - Iowan Foodie</title>
+    <title>Iowan Foodie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
     <link rel="icon" type="image/png" href="./imgs/favicon.png">
 </head>
 <body>
@@ -14,7 +17,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
-                    <img src="imgs/favicon.png" alt="Iowan Foodie Logo" class="img-fluid" style="max-width: 50px;">
+                    <img src="imgs/favicon.png" alt="Iowan Foodie Logo" class="img-fluid" style="max-width: 100px;">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -33,21 +36,22 @@
     </header>
 
     <main>
-        <section class="about-partnership py-5">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-8 mx-auto">
-                        <h2 class="mb-4">Why Partner with Us?</h2>
-                        <p class="lead">At Iowan Foodie, we celebrate the rich culinary culture of Iowa. By partnering with us, you can reach a dedicated audience of food enthusiasts who are passionate about exploring local flavors and dining experiences.</p>
-                        <p>Our platform offers unique opportunities for collaboration, whether you're a local restaurant, food producer, or event organizer. We provide various partnership options tailored to meet your business goals and help you connect with our engaged community.</p>
-                    </div>
+        <div class="video-hero position-relative">
+            <div class="container-fluid p-0">
+                <video autoplay loop muted playsinline class="w-100 h-100">
+                    <source src="./mp4/hero-video.mp4" type="video/mp4">
+                </video>
+                <div class="hero-content position-absolute w-100 text-center">
+                    <h1 class="h3">Welcome to Iowan Foodie</h1>
+                    <p class="lead">Exploring the food scene through the Midwest + beyond</p>
+                    <a href="#main-content" class="btn btn-primary">Learn More</a>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
 
-    <footer class="footer bg-dark text-white py-1">
-        <div class="container-fluid text-center">
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container text-center">
             <p>&copy; 2024 Iowan Foodie. All rights reserved.</p>
         </div>
     </footer>
