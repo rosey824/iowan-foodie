@@ -33,3 +33,14 @@
     display: block; /* Ensures the margin auto works properly */
 }
 
+/*ABout*/
+
+.framed-image {
+    border: 7px solid #000; /* Change the color and width of the border as needed */
+    padding: 0px; /* Space between the image and the border */
+    border-radius: 50px; /* Optional: rounded corners */
+    max-width: 80%; /* Adjust percentage as needed */
+    height: auto; /* Maintain aspect ratio */ 
+}
+
+
