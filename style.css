@@ -23,3 +23,12 @@
     color: white;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
+
+/*Blog*/
+
+.custom-image {
+    max-width: 100%; /* Adjust the percentage to make the image smaller or larger */
+    height: auto; /* Ensures the image maintains its aspect ratio */
+    margin: 0 auto; /* Centers the image horizontally */
+    display: block; /* Ensures the margin auto works properly */
+}
