@@ -24,10 +24,6 @@
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
 
-.video-opacity {
-    opacity: 1; /* Adjust this value between 0 (fully transparent) and 1 (fully opaque) */
-}
-
 /*Blog*/
 
 .custom-image {
