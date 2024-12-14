@@ -25,7 +25,7 @@
 }
 
 .video-opacity {
-    opacity: 0.5; /* Adjust this value between 0 (fully transparent) and 1 (fully opaque) */
+    opacity: 1; /* Adjust this value between 0 (fully transparent) and 1 (fully opaque) */
 }
 
 /*Blog*/
